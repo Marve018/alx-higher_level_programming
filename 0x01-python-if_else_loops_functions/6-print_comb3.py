@@ -4,4 +4,4 @@ for a in range(0, 10):
         if a == 8 and b == 9:
             print("89")
         else:
-            print(f"{a}{b}, ", end="")
+            print("{}{}, " .format(a, b), end="")
