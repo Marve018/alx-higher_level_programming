@@ -163,4 +163,12 @@ You can only use one loop in your code
 You are not allowed to store characters in a variable
 You are not allowed to import any module
 
+15. Remove at position
+#advanced
+Score: 0.0% (Checks completed: 0.0%)
+Write a function that creates a copy of the string, removing the character at the position n (not the Python way, the “C array index”).
+
+Prototype: def remove_char_at(str, n):
+You are not allowed to import any module
+
 
