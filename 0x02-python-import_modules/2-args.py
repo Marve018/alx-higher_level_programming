@@ -6,11 +6,11 @@ if __name__ == "__main__":
     arg_len = len(arg)
 
     if arg_len > 1:
-        print(f"{arg_len} arguments:")
+        print("{:d} arguments:" .formart(arg_len))
     elif arg_len == 1:
-        print(f"{arg_len} argument:")
+        print(f"{:d} argument:" .formart(arg_len))
     else:
         print("0 arguments.")
 
     for i in range(arg_len):
-        print(f"{i + 1}: {arg[i]}")
+        print(f"{:d}: {:s}" .formart(i + 1, arg[i]))
