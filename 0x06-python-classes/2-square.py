@@ -1,7 +1,14 @@
 #!/usr/bin/python3
+""" define a class square """
+
+
 class Square:
     """this is a class"""
     def __init__(self, size=0):
+        """ Initialize.
+        Args:
+            size (int): Size of the square.
+        """
         try:
             self.__size = size
             if type(size) != int:
