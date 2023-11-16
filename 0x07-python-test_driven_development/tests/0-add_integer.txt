@@ -1,3 +1,10 @@
+===============================
+Integer addition module
+===============================
+
+Test cases
+==========
+
 Importing the function:
     >>> add_integer = __import__("0-add_integer").add_integer
 
@@ -56,3 +63,17 @@ No argument Passesd
     ...
     TypeError: add_integer() missing 1 required positional argument: 'a'
 
+     >>> add_integer(a, 123)
+     Traceback (most recent call last):
+     NameError: name 'a' is not defined
+
+Checking more than 2 args:
+    >>> add_integer(1, 2, 3)
+    Traceback (most recent call last):
+    ...
+    TypeError: add_integer() takes from 1 to 2 positional arguments but 3 were given
+
+infinity float and negative integer
+    >>> add_integer(999e9999, -1)
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
