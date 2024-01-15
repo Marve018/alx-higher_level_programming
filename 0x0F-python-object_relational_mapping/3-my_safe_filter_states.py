@@ -15,7 +15,8 @@ if __name__ == "__main__":
 
     cur = connection.cursor()
     arg = sys.argv[4]
-    cur.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC", (arg,))
+    cur.execute("SELECT * FROM states WHERE name LIKE %s ORDER BY id ASC",
+                (arg,))
     rows = cur.fetchall()
     for row in rows:
         print(row)
