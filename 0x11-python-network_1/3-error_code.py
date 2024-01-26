@@ -7,7 +7,7 @@ from urllib import error, request
 
 
 if __name__ == "__main__":
-    
+
     url = request.Request(sys.argv[1])
     try:
         with request.urlopen(url) as response:
