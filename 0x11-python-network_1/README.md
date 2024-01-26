@@ -119,3 +119,26 @@ Repo:
 GitHub repository: alx-higher_level_programming
 Directory: 0x11-python-network_1
 File: 3-error_code.py
+
+IV. What's my status? #1
+mandatory
+Write a Python script that fetches <https://alx-intranet.hbtn.io/status>
+
+You must use the package requests
+You are not allow to import packages other than requests
+The body of the response must be display like the following example (tabulation before -)
+
+``` h
+
+guillaume@ubuntu:~/0x11$ ./4-hbtn_status.py | cat -e
+Body response:$
+    - type: <class 'str'>$
+    - content: OK$
+guillaume@ubuntu:~/0x11$
+```
+
+Repo:
+
+GitHub repository: alx-higher_level_programming
+Directory: 0x11-python-network_1
+File: 4-hbtn_status.py
