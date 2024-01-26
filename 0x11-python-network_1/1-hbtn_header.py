@@ -12,4 +12,3 @@ if __name__ == "__main__":
 
     with request.urlopen(url) as response:
         print(dict(response.headers).get("X-Request-Id"))
-
